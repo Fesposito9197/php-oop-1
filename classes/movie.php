@@ -2,7 +2,7 @@
 
 class Movie {
     public $name;
-    public $rating;
+    private $rating;
     public $genere;
     public $language;
     public $plot;
@@ -20,7 +20,9 @@ class Movie {
             $this->plot = $_plot;
         }
     }
-
+    function getRating(){
+        return $this->rating;
+    }
 }
     
 
